@@ -1,7 +1,9 @@
-const { MyPlugin } = require("./index");
+const { MjmlPlugin } = require("./index");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPlugin(MyPlugin);
+  eleventyConfig.addPlugin(MjmlPlugin, {
+    preprocessWithNunjucks: true,
+  });
 
   return {
     dir: {
