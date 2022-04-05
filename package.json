@@ -1,6 +1,6 @@
 {
   "name": "eleventy-plugin-mjml",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create HTML email with Eleventy and MJML",
   "main": "index.js",
   "scripts": {

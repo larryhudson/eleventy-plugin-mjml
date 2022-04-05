@@ -5,6 +5,7 @@ const nunjucks = require("nunjucks");
 const MjmlPlugin = (eleventyConfig, suppliedOptions) => {
   const defaultOptions = {
     preprocessWithNunjucks: false,
+    nnjucksFilters: {},
   };
 
   const options = lodashMerge(defaultOptions, suppliedOptions);
@@ -17,7 +18,15 @@ const MjmlPlugin = (eleventyConfig, suppliedOptions) => {
         var mjmlContent = str;
 
         if (options.preprocessWithNunjucks) {
-          mjmlContent = nunjucks.renderString(mjmlContent, data);
+          const nunjucksEnv = new nunjucks.Environment();
+
+          for (const [filterName, filterFunction] of Object.entries(
+            options.nunjucksFilters
+          )) {
+            nunjucksEnv.addFilter(filterName, filterFunction);
+          }
+
+          mjmlContent = nunjucksEnv.renderString(mjmlContent, data);
         }
 
         return mjml2Html(mjmlContent).html;

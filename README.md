@@ -23,6 +23,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(MjmlPlugin, {
     // if you want to use Nunjucks syntax within your MJML files, set to true
     preprocessWithNunjucks: false,
+
+    // You can add Nunjucks filters here
+    // the key is the name of the filter, and the value is the function
+    nunjucksFilters: {
+      myImaginaryFilter: (value, param) => value,
+    },
   });
 };
 ```
