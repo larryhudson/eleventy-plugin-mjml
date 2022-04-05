@@ -1,7 +1,7 @@
 {
-  "name": "scaffold-eleventy-plugin",
+  "name": "eleventy-plugin-mjml",
   "version": "1.0.0",
-  "description": "Template for Eleventy plugin development",
+  "description": "Create HTML email with Eleventy and MJML",
   "main": "index.js",
   "scripts": {
     "test": "npx @11ty/eleventy"
