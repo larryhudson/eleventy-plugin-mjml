@@ -8,7 +8,9 @@
   },
   "keywords": [
     "eleventy",
-    "eleventy-plugin"
+    "eleventy-plugin",
+    "email",
+    "mjml"
   ],
   "license": "MIT",
   "publishConfig": {
@@ -16,9 +18,9 @@
     "registry": "https://registry.npmjs.org/"
   },
   "bugs": {
-    "url": "https://github.com/larryhudson/<REPLACE THIS!>/issues"
+    "url": "https://github.com/larryhudson/eleventy-plugin-mjml/issues"
   },
-  "homepage": "https://github.com/larryhudson/<REPLACE THIS!>#readme",
+  "homepage": "https://github.com/larryhudson/eleventy-plugin-mjml#readme",
   "author": {
     "name": "Larry Hudson",
     "email": "larryhudson@hey.com",
@@ -26,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/larryhudson/<REPLACE THIS!>.git"
+    "url": "git+https://github.com/larryhudson/eleventy-plugin-mjml.git"
   },
   "dependencies": {
     "@11ty/eleventy": "^1.0.0",
