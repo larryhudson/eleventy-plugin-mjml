@@ -1,0 +1,35 @@
+{
+  "name": "scaffold-eleventy-plugin",
+  "version": "1.0.0",
+  "description": "Template for Eleventy plugin development",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx @11ty/eleventy"
+  },
+  "keywords": [
+    "eleventy",
+    "eleventy-plugin"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "bugs": {
+    "url": "https://github.com/larryhudson/<REPLACE THIS!>/issues"
+  },
+  "homepage": "https://github.com/larryhudson/<REPLACE THIS!>#readme",
+  "author": {
+    "name": "Larry Hudson",
+    "email": "larryhudson@hey.com",
+    "url": "https://github.com/larryhudson"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larryhudson/<REPLACE THIS!>.git"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "lodash.merge": "^4.6.2"
+  }
+}
