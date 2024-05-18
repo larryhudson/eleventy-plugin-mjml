@@ -5,7 +5,7 @@ const nunjucks = require("nunjucks");
 const MjmlPlugin = (eleventyConfig, suppliedOptions) => {
   const defaultOptions = {
     preprocessWithNunjucks: false,
-    nnjucksFilters: {},
+    nunjucksFilters: {},
   };
 
   const options = lodashMerge(defaultOptions, suppliedOptions);
